@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="myweb.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="myweb.js"></script>
+    
+    <title>serch</title>
+</head>
+<body>
+
+    <div id="head"></div>
+  
+    <!-- 숙박 검색 -->
+    <!-- 한국관광공사 인증 한옥은 데이터 상 경상북도에 9개 경주시 0개, 경상북도 전체 숙박으로 변경 -->
+    <article id="serch" class="articles" >
+        <h1 id="title3">경상북도 숙소 찾기</h1>
+	    <form name="serchHotels">
+        행정구역 : 
+        <select id="sigungu">
+            <option value="1">경산시</option>
+            <option value="2" selected>경주시</option>
+            <option value="3">고령군</option>
+            <option value="4">구미시</option>
+            <option value="5">김천시</option>
+            <option value="6">문경시</option>
+            <option value="7">봉화군</option>
+            <option value="8">상주시</option>
+            <option value="9">성주군</option>
+            <option value="10">안동시</option>
+            <option value="11">영덕군</option>
+            <option value="12">영양군</option>
+            <option value="13">영주시</option>
+            <option value="14">영천시</option>
+            <option value="15">예천군</option>
+            <option value="16">울릉군</option>
+            <option value="17">울진군</option>
+            <option value="18">의성군</option>
+            <option value="19">청도군</option>
+            <option value="20">청송군</option>
+            <option value="21">칠곡군</option>
+            <option value="22">포항시</option>
+            
+        </select>
+
+        <br>
+        출력 개수 : 
+        <select id="row">
+            <option value="292">전체</option>
+            <option value="10" selected>10</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+        </select>
+        
+		<br><br>
+
+		<button type="button" id="btn_load" >정보 가져오기</button>
+        <button type="button" id="btn_remove" >지우기</button>
+        <div id="map"></div>
+	</form>
+    </article>
+
+    <table id="demoJSON"></table>
+
+    <div id="foot"></div>
+
+    
+</body>
+
+</html>

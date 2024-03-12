@@ -1,0 +1,407 @@
+.hidden{
+    display: none;
+}
+/* 헤더 */
+.logobar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 50px;    
+}
+#logo2{    
+    width: 120px;
+    height: 100px;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;    
+}
+#siteName{
+    width: 100%;
+    font-size: 80px;
+    font-family: 궁서;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#topMenu{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    font-size: 20px;
+}
+#topMenu li{
+    padding: 8px 12px;
+}
+#topMenu li:hover {
+    box-shadow: 0 2px 0 0 black; 
+    /* 밑줄 설정 */
+}
+#login{
+    font-size: 15px;
+    word-spacing: 5px;
+}
+.navbarTogle{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: black;
+}
+
+/* 메인 */
+.hotels{
+    text-align:center;
+    max-width: 100%;
+    height: auto;
+}
+.title, .body{
+    font-family: 돋움;
+    text-align: center;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+/* 푸터 */
+footer {
+    margin: 50px 0 0 0;
+    height: 250px;
+   
+}
+#logoSmall{
+    float: left;
+    margin: 20px 0 0 20px;
+}
+footer #footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: auto;
+    margin: 0px 20px 0 80px;
+    float: left;
+}
+footer #social {
+    width: 250px;
+    margin: 20px 20px 0 0;
+    float: right;
+}
+footer #social img {
+    margin: 0 7px;
+}
+footer #social a {
+    text-decoration: none;
+}
+/* 반응형 */
+
+/* Mobile */
+@media screen and (max-width: 600px){
+    .logobar{
+        align-items: flex-start;
+        padding: 30px 20px;
+    }
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    #topMenu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #topMenu li{
+        width: 100%;
+        text-align: center;
+    }
+    #login{
+        display: none;
+        justify-content: center;
+        width: 100%;
+        padding-left: 0;
+    }
+    .navbarTogle{
+        display: block;
+    }
+
+    #topMenu.active,
+    #login.active{
+        display: flex;
+    }
+
+    #logo2{
+        width: 60px;
+        height: 50px;
+    }
+    #siteName{
+        font-size: 25px;
+    }
+}
+
+/* tablet */
+@media screen and (min-width:601px) and (max-width: 768px){
+    .logobar{
+        align-items: flex-start;
+        padding: 30px 20px;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    #topMenu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #topMenu li{
+        width: 100%;
+        text-align: center;
+    }
+    #login{
+        display: none;
+        justify-content: center;
+        width: 100%;
+        padding-left: 0;
+    }
+    .navbarTogle{
+        display: block;
+    }
+    #topMenu.active,#login.active {
+        display: flex;
+    }
+    #logo2{
+        width: 80px;
+        height: 60px;
+    }
+    #siteName{
+        font-size: 30px;
+    }
+
+    #login{
+        font-size: 20px;
+    }
+}
+
+/* 로그인 폼 */
+#title5 {
+    text-align: center;
+    margin-top: 30px;
+    color: #333;
+    font-size: 30px;
+}
+#loginForm {
+    width: 320px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+table {
+    width: 100%;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+.loginForm2 {
+    width: calc(100% - 20px);
+    /* 부모 요소의 너비에서 좌우 여백 20픽셀을 뺀 값으로 설정 */
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+#buttons {
+    text-align: center;
+}
+#login2, #join {
+    padding: 10px 20px;
+    margin-right: 0px;
+    background-color: rgb(17, 49, 196);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+#login2:hover, #join:hover {
+    background-color: #45a049;
+}
+
+/* 동의 관련 스타일 */
+#title6{
+    text-align: center;
+    font-size: 30px;
+}
+#agree{
+    width: 800px;
+    height: 800px;
+    overflow-y: scroll;
+   
+}
+#agreeForm {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-right: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+ 
+}
+#agreeForm2 {
+    display: flex;
+    flex-direction: column;
+    /* 부모 요소의 자식 요소들이 세로 방향(column)으로 배치됩니다. 
+    즉, 부모 요소 안에서 자식 요소들이 위에서 아래로 쌓이게 됩니다.  */
+    align-items: center;
+    /* 부모 요소의 자식 요소들을 수직 (세로) 방향으로 정렬하는 방법을 지정합니다. 
+    center: 자식 요소들을 부모 요소의 중앙으로 정렬합니다. */
+}
+#agreeCh {
+    margin-right: 10px;
+}
+#agreeCh2 {
+    background-color:rgb(17, 49, 196);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+}
+#agreeCh2:hover {
+    background-color: #45a049;
+}
+
+/* 회원가입 폼 */
+#title7{
+    text-align: center;
+    font-size: 30px;
+}
+#joinForm {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+.joinGroup {
+    margin-bottom: 10px;
+}
+label {
+    font-weight: bold;
+}
+input[type="text"],input[type="password"], #email{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#joinCheck {
+    background-color:rgb(17, 49, 196);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+#joinCheck:hover {
+    background-color: #45a049;
+}
+
+/* 소개 */
+#introduce {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+.title2 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.body2 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+#introduce div {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+#introduce a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+#introduce a:hover {
+    text-decoration: underline;
+}
+
+/* 숙소 찾기 */
+#houseImg{
+    width: 100px;
+    height: 100px;
+}
+#serch {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+}
+#title3{
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+select, button {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* 오시는 길 */
+#mapMain {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    text-align: center;
+}
+.title4 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+.body4 {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 8px;
+}
+#googleMap {
+    margin: 20px 0 0 350px;
+}
