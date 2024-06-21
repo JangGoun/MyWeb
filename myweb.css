@@ -20,8 +20,9 @@
 }
 #siteName{
     width: 100%;
-    font-size: 80px;
-    font-family: 궁서;
+    font-size: 70px;
+    font-family: '궁서체';
+    font-weight: bold;
     margin: 20px 0 0 0;
     text-align: center;
 }
@@ -61,7 +62,7 @@ a{
     height: auto;
 }
 .title, .body{
-    font-family: 돋움;
+    font-family: '배달의민족 주아';
     text-align: center;
 }
 
@@ -130,6 +131,10 @@ footer #social a {
     }
     .navbarTogle{
         display: block;
+        position: absolute;
+        left: 32px; /* 왼쪽으로 위치 조정 */
+        font-size: 24px;
+        color: black;
     }
 
     #topMenu.active,
@@ -175,6 +180,10 @@ footer #social a {
     }
     .navbarTogle{
         display: block;
+        position: absolute;
+        left: 32px; /* 왼쪽으로 위치 조정 */
+        font-size: 24px;
+        color: black;
     }
     #topMenu.active,#login.active {
         display: flex;
